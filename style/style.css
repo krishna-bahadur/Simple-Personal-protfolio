@@ -1,0 +1,560 @@
+body {
+    font-family: sans-serif;
+}
+
+.sidebar {
+    width: 50px;
+    background-color: #0b082d;
+    color: #fff;
+    min-height: 100vh;
+    height: 100%;
+    transition: width 0.3s ease;
+
+}
+
+
+.sidebar .profile img {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    object-fit: cover;
+    padding: 6px;
+    background: #f6f7fcc9;
+}
+
+.sidebar.active {
+    width: 250px;
+    overflow: overlay;
+
+}
+
+.sidebar #bar {
+    justify-content: center;
+    display: flex;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.active #bar {
+    justify-content: safe end;
+    display: flex;
+    padding-right: 10px;
+    font-size: 30px;
+}
+
+.active .active1 {
+    display: block !important;
+}
+
+.sidebar .profile {
+    display: none;
+}
+
+
+.active .active2 {
+    display: block !important;
+    border-bottom: 1px solid red;
+    padding-bottom: 5px;
+}
+
+.sidebar .mybio {
+    display: none;
+}
+
+.active .list {
+    display: flex;
+    justify-content: center;
+}
+
+.sidebar .list ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+
+}
+
+.active .list ul {
+    text-align: unset;
+}
+
+.sidebar .list a {
+    color: #fff;
+
+}
+
+.sidebar .list a span {
+    opacity: 0;
+    position: absolute;
+    pointer-events: none;
+
+}
+
+.sidebar.active .list a span {
+    position: relative;
+    opacity: 1;
+}
+
+.sidebar .active .list a span {
+    opacity: 1;
+}
+
+.sidebar .list li {
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    position: relative;
+}
+
+.active .list a {
+    color: #fff;
+    text-decoration: none;
+    padding: 9px 90px 9px 12px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.sidebar .list a i {
+    margin-right: 15px;
+}
+
+.sidebar.active .list a:hover {
+    background-color: #fff;
+    color: #000;
+    border-radius: 6px;
+}
+
+.sidebar .tooltip {
+    background-color: #1c1f49;
+    padding: 8px 38px;
+    border-radius: 6px;
+    color: #fff;
+    top: 10px;
+    left: 60px;
+    display: none;
+    opacity: 0;
+
+}
+
+.sidebar.active .tooltip {
+    display: none !important;
+    opacity: 0 !mportant;
+}
+
+.sidebar li:hover .tooltip {
+    display: inline-block;
+    opacity: 1 !important;
+
+
+}
+
+/*.home {
+    background-image: url(../images/backgroundImage.png);
+    width: 100%;
+    background-repeat: no-repeat;
+    transition: all 0.3s ease;
+    height: 100%;
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+
+}*/
+.home {
+    width: 100%;
+}
+
+.home .row {
+    height: fit-content;
+    width: 100%;
+    padding: 0px 5px;
+    align-items: center;
+
+}
+
+.topnav {
+    box-shadow: 0px 10px 9px 1px #c4b6b6;
+
+}
+
+
+.icon a {
+    font-size: 25px;
+}
+
+.icon a {
+    background-color: #000;
+    color: #fff;
+    height: 40px;
+    width: 40px;
+    display: block;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+.icon {
+    margin: 0px 13px;
+    position: relative;
+}
+
+.icon .tooltip {
+    top: -85%;
+    color: #000;
+    background-color: #fff;
+    padding: 3px 5px;
+    border-radius: 5px;
+    left: -12%;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+}
+
+.facebook a:hover {
+    background-color: blue;
+    color: #fff;
+}
+
+.wrapper .icon:hover .tooltip {
+    opacity: 1 !important;
+    pointer-events: auto;
+    background-color: blue;
+    color: #fff;
+}
+
+.github a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.wrapper .github:hover .tooltip {
+    opacity: 1 !important;
+    pointer-events: auto;
+    background-color: #000;
+    color: #fff;
+}
+
+.instagram a:hover {
+    background-color: #f31ee1;
+    color: #fff;
+}
+
+.wrapper .instagram:hover .tooltip {
+    opacity: 1 !important;
+    pointer-events: auto;
+    background-color: #f31ee1;
+    color: #fff;
+}
+
+.twitter a:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.wrapper .twitter:hover .tooltip {
+    opacity: 1 !important;
+    pointer-events: auto;
+    background-color: #007bff;
+    color: #fff;
+}
+
+.youtube a:hover {
+    background-color: red;
+    color: #fff;
+}
+
+.wrapper .youtube:hover .tooltip {
+    opacity: 1 !important;
+    pointer-events: auto;
+    background-color: red;
+    color: #fff;
+}
+
+.bio span {
+    color: red;
+    font-size: 25px;
+    font-family: ui-serif;
+    letter-spacing: 4px;
+}
+
+h3 {
+    font-weight: revert;
+    letter-spacing: 2px;
+}
+
+.container-fluid img {
+    width: 119%;
+    height: 441px;
+    object-fit: cover;
+}
+
+.one {
+    display: flex;
+    justify-content: center;
+}
+
+.one .row {
+    width: 70%;
+}
+
+.home .image img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px #c7b3b3;
+}
+
+.bio .describe {
+    color: #000;
+    font-family: ui-sans-serif;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.card-text {
+    text-align: justify;
+}
+
+.title {
+    font-size: 25px;
+    position: relative;
+}
+
+.title span {
+    position: relative;
+}
+
+.title span:after {
+    content: "";
+    display: block;
+    height: 2px;
+    left: 0;
+    position: absolute;
+    background: #ea0e4b;
+    width: 100%;
+}
+
+.card-image i {
+    font-size: 70px;
+    background-color: #084298;
+    border-radius: 50%;
+    color: #fff;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    line-height: 100px;
+}
+
+.row {
+    margin: 0 !important;
+}
+
+.card {
+    align-items: center;
+    background-image: linear-gradient(85deg, #6043d8, #b6a5ae) !important;
+    color: #fff;
+    pro transition: all 0.5s ease;
+    height: 420px;
+    padding: 5px;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-title span {
+    font-size: 20px;
+    font-weight: 500;
+    border-bottom: 2px solid #f00c0c;
+}
+
+.project {
+    width: 100%;
+}
+
+.pic img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.col1.activecol1 img {
+    width: 94%;
+    height: auto;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+}
+
+
+.pic .active img {
+    width: 94%;
+    height: auto;
+    position: absolute;
+    padding: 0;
+    margin-left: 10px;
+    left: 60px;
+    object-fit: cover;
+
+}
+
+.pic .col-md-3 {
+    border-radius: 10px;
+    margin-top: 20px;
+    margin: 15px 18px;
+    box-shadow: 0px 0px 5px #514e4e;
+
+}
+
+.project .popup-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.9);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    display: none;
+    overflow: auto;
+
+
+}
+
+.project .popup-image span {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-weight: bolder;
+    color: red;
+    font-size: 60px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.project .popup-image img {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    border-radius: 5px;
+    width: 650px;
+    object-fit: cover;
+    transition: all 0.3s ease;
+
+
+}
+
+@media (max-width: 768px) {
+    .project .popup-image img {
+        width: 95%;
+    }
+}
+
+@media (max-width: 768px) {
+    .index .image {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .topnav .wrapper {
+        justify-content: center !important;
+        display: flex;
+    }
+}
+
+.contact {
+    width: 100%;
+}
+
+.contact i {
+    margin: 0px 10px;
+    font-size: 25px;
+
+}
+
+.contact li {
+    font-size: 18px;
+
+}
+
+.form {
+    width: 50%;
+}
+
+.contact form {
+    transition: transform all 1.2s ease;
+}
+
+.login form {
+    background-color: #ccbebe7a;
+    padding: 40px;
+    border-radius: 7px;
+    position: relative;
+    top: 85px;
+    box-shadow: 0px 0px 5px #664d4d;
+}
+
+.top-bar {
+    height: 40px;
+    line-height: 40px;
+    font-size: 30px;
+    display: flex;
+    justify-content: end;
+    padding-right: 30px;
+    align-items: center;
+}
+
+.top-bar a {
+    color: #000;
+}
+
+.top-bar a:hover {
+    color: #fff;
+}
+
+.dashboard {
+    width: 100%;
+}
+
+.top-bar span {
+    font-size: 25px !important;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+.message {
+    font-family: sans-serif;
+    align-items: center;
+    width: 100%;
+}
+
+.message .table {
+    border-top: 3px solid red;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+
+.table table {
+    width: 100%;
+}
+
+.table tr {
+    height: 40px;
+    line-height: 40px;
+}
+
+.profilePic {
+    border-bottom: 2px solid red;
+    padding-bottom: 5px;
+}
+
+.listOfProject table {
+    width: 100%;
+}

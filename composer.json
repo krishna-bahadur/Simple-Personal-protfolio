@@ -1,0 +1,10 @@
+{
+    "name": "krishanabk1",
+    "description": "A description of my project",
+    "type": "project",
+
+    "post-install-cmd": [
+     "php artisan clear-compiled",
+     "chmod -R 777 public/"
+ ]
+}

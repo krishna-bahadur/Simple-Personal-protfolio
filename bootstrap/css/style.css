@@ -1,0 +1,219 @@
+.container {
+    margin-top: 30px;
+    box-shadow: 0px 0px 4px 2px #f3ecec;
+    padding: 0px;
+}
+
+.logo img {
+    border: 2px solid #b1b5c3;
+    border-radius: 100px;
+    width: 20%;
+    margin: 0px 35px;
+}
+
+.fontawesome .fa-facebook {
+    color: #fff;
+    background-color: blue;
+    padding: 10px;
+    border-radius: 15px;
+    line-height: 10px;
+    box-shadow: 1px 1px 3px 1px #5f5252
+}
+
+.fontawesome .fa-twitter {
+    color: #fff;
+    background-color: blue;
+    padding: 7px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 3px 1px #5f5252
+}
+
+.fontawesome .fa-instagram {
+    color: #fff;
+    background-color: #f31eb1;
+    padding: 7px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 3px 1px #5f5252
+}
+
+.fontawesome .fa-youtube-play {
+    color: #fff;
+    background-color: red;
+    padding: 7px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 3px 1px #5f5252
+}
+
+.fontawesome li {
+    margin-right: 15px;
+}
+
+.fontawesome ul {
+    margin: 55px 90px 0px 0px;
+}
+
+.container-fluid {
+    border-top: 3px solid mediumvioletred;
+}
+
+span {
+    color: green;
+    font-size: 25px;
+    font-family: ui-serif;
+    letter-spacing: 4px;
+}
+
+h3 {
+    font-weight: revert;
+    letter-spacing: 2px;
+}
+
+.container-fluid img {
+    width: 119%;
+    height: 441px;
+    object-fit: cover;
+}
+
+.describe {
+    margin: 150px 35px;
+}
+
+.knowledge1 h2 {
+    font-family: ui-serif;
+    text-align: center;
+    height: 50px;
+    box-shadow: 1px 1px 4px 3px #b2abab;
+    width: fit-content;
+    padding: 5px;
+    border-radius: 6px;
+}
+
+.knowledge {
+    width: 100%;
+    box-shadow: 5px 10px 20px 2px #c0c5c08c;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.second,
+.first {
+    margin: 25px;
+}
+
+.first p {
+    font-size: 19px;
+    font-family: 'FontAwesome';
+    padding: 8px;
+}
+
+.skills {
+    border: 1px solid;
+    border-radius: 20px;
+}
+
+.html,
+.java,
+.php,
+.phython {
+    width: 80%;
+    background-color: #8a2be2;
+    border-radius: 10px 1px 0px 10px;
+    margin: -1px;
+    text-align: right;
+
+}
+
+.java {
+    width: 40%;
+}
+
+.php {
+    width: 60%;
+}
+
+.phython {
+    width: 10%;
+}
+
+.cardcss {
+    margin: 32px;
+    padding: 44px;
+    font-size: 40px;
+    box-shadow: 5px 10px 20px 2px #c0c5c08c;
+    border-radius: 10px;
+}
+
+.card:hover .overlay {
+    opacity: 1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+    border-radius: 10px;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.project .card img {
+    width: 500px;
+    height: 317px;
+    object-fit: cover;
+    padding: 5px;
+}
+
+.project .card {
+    width: fit-content;
+    box-shadow: 5px 10px 20px 2px #c0c5c08c;
+    border-radius: 10px;
+}
+
+.project1 img {
+    width: 500px;
+}
+
+.footer {
+    background-image: linear-gradient(283deg, #5b81a8, transparent);
+    padding: 20px;
+}
+
+.details {
+    padding: 20px;
+    margin: 20px;
+}
+
+.footer p {
+
+    font-family: unset;
+    font-size: 18px;
+}
+
+.footer h5 {
+    font-family: emoji;
+}
+
+.footer img {
+    width: 30%;
+border: 2px solid;
+border-radius: 173px;
+object-fit: cover;
+height: 160px;
+}
